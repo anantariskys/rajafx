@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from '@/assets/logo.svg'
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname(); // Dapatkan path halaman saat ini
@@ -15,9 +17,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-primary text-[#9A9CA0]">
+    <nav className="bg-primary z-50 fixed top-0 w-full  text-[#9A9CA0]">
       <main className="flex container py-6 justify-between items-center">
-        <div>
+        <div className="flex items-center  gap-2">
+          <Image src={Logo} alt="logo"/>
           <h1 className="text-white text-2xl font-semibold">RAJAFX</h1>
         </div>
         <ul className="flex gap-8">
