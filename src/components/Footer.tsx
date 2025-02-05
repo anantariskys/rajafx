@@ -1,13 +1,20 @@
 import Link from "next/link";
 import React from "react";
-
+import Logo from '@/assets/logo.svg'
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-primary text-white pb-8 pt-16">
       <main className="container">
-        <div className="flex justify-between">
-          <div>
+        <div className="flex justify-between items-start">
+          <div className="space-y-2">
+          <div className="flex gap-2 items-center">
+            <Image src={Logo} alt="logo"/>
             <h1 className="font-semibold text-2xl">RAJAFX</h1>
+          </div>
+          <p className="text-sm font-light">Copyright @ 2024 RajaFX </p>
+          <p className="text-sm font-light">All rights reserved</p>
+
           </div>
           <div className="flex gap-16 ">
             <div>
