@@ -11,6 +11,8 @@ import LayananXMImage from "@/assets/layanan-xm-card.png";
 import whyXM from "@/data/whyXM";
 import WhyCard from "@/components/XM/WhyCard";
 import { jenisAkunXM } from "@/data/jenisAkun";
+import JenisAkun from "./jenis-akun/page";
+import JenisAkunCard from "@/components/JenisAkunCard";
 const XM = () => {
   return (
     <>
@@ -120,29 +122,7 @@ const XM = () => {
       }>
         <main className="flex max-w-5xl mx-auto gap-4 justify-center">
           {jenisAkunXM.map((item, index) => (
-            <div
-              key={index}
-              className=" w-full gap-8 bg-white flex flex-col justify-between rounded-lg p-6 border"
-            >
-              <div>
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  className="w-28 aspect-square object-contain mx-auto"
-                  draggable={false}
-                />
-                <h4 className="font-semibold text-2xl text-center">
-                  {item.name}
-                </h4>
-                <p className="text-center text-[#6B6E73]">{item.description}</p>
-              </div>
-              <div className="font-semibold space-y-2">
-                <p className=" text-center">
-                  Minimum Deposit {item.minimum_deposit}
-                </p>
-                <Button width="w-full">Lihat lebih lengkap</Button>
-              </div>
-            </div>
+           <JenisAkunCard link="/xm/jenis-akun" item={item} key={index}/>
           ))}
         </main>
       </SectionLayout>
