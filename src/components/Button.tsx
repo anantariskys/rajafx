@@ -13,7 +13,7 @@ const Button:FC<Props> = ({children,variant='primary',width='w-fit'}) => {
             
             break;
         case 'secondary':
-            className='bg-[#FAFAFA] text-primary ';
+            className='bg-white text-primary ';
             break;
     
         default:
