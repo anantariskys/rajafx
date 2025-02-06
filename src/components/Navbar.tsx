@@ -6,7 +6,7 @@ import Logo from '@/assets/logo.svg'
 import Image from "next/image";
 
 const Navbar = () => {
-  const pathname = usePathname(); // Dapatkan path halaman saat ini
+  const pathname = usePathname(); 
 
   const menuItems = [
     { name: "Home", path: "/" },
