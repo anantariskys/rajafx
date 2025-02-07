@@ -11,7 +11,6 @@ import LayananXMImage from "@/assets/layanan-xm-card.png";
 import whyXM from "@/data/whyXM";
 import WhyCard from "@/components/XM/WhyCard";
 import { jenisAkunXM } from "@/data/jenisAkun";
-import JenisAkun from "./jenis-akun/page";
 import JenisAkunCard from "@/components/JenisAkunCard";
 const XM = () => {
   return (
