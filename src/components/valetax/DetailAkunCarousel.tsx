@@ -2,8 +2,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React from "react";
 import "@splidejs/react-splide/css";
-import Button from "../Button";
-import Link from "next/link";
 import { jenisAkunValetax2 } from "@/data/jenisAkun";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
