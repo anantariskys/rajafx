@@ -3,7 +3,6 @@ import DetailAkunCarousel from '@/components/valetax/DetailAkunCarousel'
 import { jenisAkunValetax2 } from '@/data/jenisAkun'
 import SectionLayout from '@/layouts/SectionLayout'
 import { Icon } from '@iconify/react/dist/iconify.js'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
 import Link from 'next/link'
 import React from 'react'
 
