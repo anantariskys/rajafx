@@ -11,8 +11,9 @@ interface Props{
         image:StaticImageData
     }
     link :string
+    linkText?:string
 }
-const JenisAkunCard:FC<Props> = ({item,link}) => {
+const JenisAkunCard:FC<Props> = ({item,link,linkText='Lihat lebih lengkap'}) => {
   return (
     <div
     className=" w-full gap-8 bg-white flex flex-col justify-between rounded-lg p-6 border"
@@ -29,12 +30,12 @@ const JenisAkunCard:FC<Props> = ({item,link}) => {
       </h4>
       <p className="text-center text-[#6B6E73]">{item.description}</p>
     </div>
-    <div className="font-semibold space-y-2">
+    <div className="font-semibold flex-col flex gap-4">
       <p className=" text-center">
         Minimum Deposit {item.minimum_deposit}
       </p>
       <Link href={link}>
-      <Button width="w-full">Lihat lebih lengkap</Button>
+      <Button width="w-full">{linkText}</Button>
       </Link>
     </div>
   </div>
