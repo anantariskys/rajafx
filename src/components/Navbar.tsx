@@ -12,7 +12,7 @@ const Navbar = () => {
   const menuItems = useMemo(
     () => [
       { name: "Home", path: "/", activePath: ["/"] },
-      { name: "Valetax", path: "/valetax", activePath: ["/valetax"] },
+      { name: "Valetax", path: "/valetax", activePath: ["/valetax",'/valetax/promosi','/valetax/copy-trading'] },
       {
         name: "XM",
         path: "/xm",
