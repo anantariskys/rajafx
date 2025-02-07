@@ -3,6 +3,8 @@ import React from "react";
 import CTAImage from "@/assets/cta-img.jpg";
 import { usePathname } from "next/navigation";
 import SectionLayout from "@/layouts/SectionLayout";
+import Button from "./Button";
+import Link from "next/link";
 
 const CTA = () => {
    const pathname = usePathname(); 
@@ -23,9 +25,11 @@ const CTA = () => {
             Bingung memulai trading? Konsultasikan dengan tim{" "}
             <span className="text-[#25C660]">RajaFx</span>
           </p>
-          <button className="bg-white text-primary py-2 px-8 rounded-lg">
+          <Link href={"/hubungi-kami"}>
+          <Button variant="secondary">
             Hubungi Kami
-          </button>
+          </Button>
+          </Link>
         </div>
       </main>
   </SectionLayout>
