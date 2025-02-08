@@ -5,7 +5,7 @@ import Button from '@/components/Button'
 import Link from 'next/link'
 const CopyTrading = () => {
   return (
-    <section className='flex md:flex-row flex-col items-start py-24 gap-8'>
+    <section className='flex md:flex-row flex-col items-start py-24 gap-8 px-4 md:px-0'>
         <Image src={Img} alt='copy trading' className='md:w-2/5 border-2 rounded-2xl'/>
         <div className='flex flex-col gap-4 max-w-2xl'>
             <h2 className='text-5xl font-semibold'>Salin Strategi Trader Profesional Secara Otomatis</h2>
