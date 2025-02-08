@@ -25,7 +25,7 @@ const JenisAkun = () => {
                         </div>
                         <div className="py-4  flex flex-col gap-2">
                             <Button width='w-full' className='group-hover:bg-white group-hover:text-primary'>Buat Akun</Button>
-                            <Link href={`/valetax/jenis-akun/${item.name}`}>
+                            <Link href={`/valetax/jenis-akun/${item.slug}`}>
                             <Button width='w-full' className='group-hover:bg-transparent group-hover:text-white group-hover:border-white'  variant='primary-outline'>Lihat Detail</Button>
                             </Link>
                         
