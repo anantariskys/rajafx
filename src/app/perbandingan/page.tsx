@@ -7,12 +7,12 @@ import Valetax from "@/assets/valetax.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 const Perbandingan = () => {
   return (
-    <div className="pt-48">
+    <div className="md:pt-48 pt-24">
       <SectionLayout
         title="Perbandingan"
         subTitle="Tentukan pilihan broker terbaik sesuai dengan kebutuhan dan strategi anda untuk memaksimalkan potensi keuntungan investasi"
       >
-        <main className="w-full text-[0.9rem] font-semibold flex justify-center gap-8 py-16">
+        <main className="w-full text-[0.9rem] font-semibold flex flex-col md:flex-row justify-center gap-8 py-16">
           <div className="max-w-sm w-full  rounded-lg flex flex-col justify-start">
             <div className="p-6 flex flex-col items-start ">
               <div className="w-24 aspect-video"></div>
