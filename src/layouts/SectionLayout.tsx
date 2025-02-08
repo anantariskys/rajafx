@@ -10,7 +10,8 @@ interface SectionLayoutProps {
   icon?: string;
   autoContainer?: boolean;
   backgroundColor?: string;
-  variant? : "XM"|"Valetax"
+  variant? : "XM"|"Valetax";
+  id?: string
 }
 
 const SectionLayout: FC<SectionLayoutProps> = ({
@@ -20,7 +21,8 @@ const SectionLayout: FC<SectionLayoutProps> = ({
   autoContainer = true,
   icon,
   backgroundColor,
-  variant='XM'
+  variant='XM',
+  id
 }) => {
   let className = "";
   switch (variant) {
@@ -31,8 +33,8 @@ const SectionLayout: FC<SectionLayoutProps> = ({
       className = "text-[#25C660] bg-[#E9F9EF]";
   }
   return (
-    <section className={`${backgroundColor}  ${backgroundColor==="bg-[#141921]"?"text-white":""}`}>
-      <div className={`${autoContainer && "container"}  lg:py-24 space-y-6`}>
+    <section id={`${id}`} className={`${backgroundColor}  ${backgroundColor==="bg-[#141921]"?"text-white":""}`}>
+      <div className={`${autoContainer && "container"} py-10  md::py-24 space-y-6`}>
         <div className="space-y-4">
           {icon && (
             <div className={`${className} p-4 text-2xl w-fit mx-auto  rounded-full `}>
