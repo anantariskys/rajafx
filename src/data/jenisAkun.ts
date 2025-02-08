@@ -149,6 +149,7 @@ export const jenisAkunValetax2 = [
     id: 1,
     heroIMG: IMG1,
     name: "Cent",
+    slug: "cent",
     description: "Mulai deposit dengan 1 USD",
     description2:
       "Deposit hanya USD 1, menampilkan saldo dalam sen, dan Bebas Swap!",
@@ -171,6 +172,7 @@ export const jenisAkunValetax2 = [
     id: 2,
     heroIMG: IMG2,
     name: "Akun Standar",
+    slug: "standard",
     description: "Akun paling populer",
     description2: "Akun paling populer",
     description3:
@@ -193,6 +195,7 @@ export const jenisAkunValetax2 = [
     heroIMG: IMG3,
 
     name: "ECN",
+    slug: "ecn",
     description: "Rasakan kekuatan akses pasar langsung untuk perdagangan Anda",
     description2:
       "Rasakan kemudahan dan kecepatan akses  pasar untuk mendukung perdagangan Anda.",
@@ -216,6 +219,7 @@ export const jenisAkunValetax2 = [
     heroIMG: IMG4,
 
     name: "Akun Booster",
+    slug: "booster",
     description:
       "Dapatkan rebate tertinggi untuk anda, jaringan anda, dan para trader",
     description2:
@@ -240,6 +244,7 @@ export const jenisAkunValetax2 = [
     heroIMG: IMG5,
 
     name: "Bonus Account",
+    slug: "bonus",
     description: "Tingkatkan ekuitas dengan bonus yang tersedia",
     description2:
       "Deposit hanya USD 1, menampilkan saldo dalam sen, dan Bebas Swap!",
@@ -263,6 +268,7 @@ export const jenisAkunValetax2 = [
     heroIMG: IMG6,
 
     name: "Akun PRO",
+    slug: "pro",
     description:
       "Spread sangat rendah dan tanpa komisi, dirancang khusus untuk trader berpengalaman",
     description2:
