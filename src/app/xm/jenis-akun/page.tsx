@@ -11,7 +11,7 @@ const JenisAkun = () => {
         icon="solar:user-bold"
         subTitle="Pilih jenis akun sesuai kebutuhan anda  yang terus berkembang."
       >
-        <main className="flex max-w-5xl mx-auto gap-4 justify-center">
+        <main className="flex md:flex-row flex-col max-w-5xl mx-auto gap-4 justify-center">
           {jenisAkunXM.map((item, index) => (
             <JenisAkunCard link="" linkText="Buka akun" item={item} key={index} additionalInfo={item} />
           ))}
