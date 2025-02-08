@@ -8,7 +8,7 @@ import { valetaxCopyTradingBenefits } from "@/data/benefits";
 import { Icon } from "@iconify/react/dist/iconify.js";
 const CopyTrading = () => {
   return (
-    <div className="pt-48">
+    <div className="md:pt-48 pt-24">
       <SectionLayout
         icon="hugeicons:trade-up"
         title="Copy Trading"
