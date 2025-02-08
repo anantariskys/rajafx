@@ -8,9 +8,9 @@ import React from 'react'
 
 const JenisAkun = () => {
   return (
-    <div className='pt-48'>
+    <div className='md:pt-48 pt-24'>
         <SectionLayout icon='solar:user-bold' variant='Valetax' title='Pembukaan Akun' subTitle='Pilih jenis akun sesuai kebutuhan anda  yang terus berkembang.'>
-            <main className='max-w-4xl grid-cols-3 grid mx-auto gap-6 pt-10'>
+            <main className='max-w-4xl md:grid-cols-3 grid mx-auto gap-6 pt-10'>
                 {
                     jenisAkunValetax2.map((item,index)=>(
                         <div key={index} className="w-full group hover:bg-primary duration-300 ease-in-out hover:text-white text-primary  p-6 divide-y shadow border rounded-2xl">
