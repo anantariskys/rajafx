@@ -63,20 +63,20 @@ const HeroSlide: FC<HeroSlideProps> = ({
   <SplideSlide>
     <div
       style={{ backgroundImage: `url(${image.src})` }}
-      className="w-full h-full bg-cover bg-center flex items-center justify-center relative"
+      className="w-full h-full bg-cover bg-center flex  items-center justify-center relative"
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
-      <div className="relative z-10 text-white container flex items-center justify-between  ">
+      <div className="relative z-10 text-white container flex md:flex-row flex-col-reverse items-center justify-between  ">
         <div className="flex flex-col gap-4 ">
-          <h1 className="text-6xl font-bold leading-tight max-w-4xl">
+          <h1 className="md:text-6xl text-4xl font-bold leading-tight max-w-4xl">
             {title} <span className="text-[#25C660]">{highlight}</span>
           </h1>
-          <p className="text-lg font-light max-w-3xl">{description}</p>
+          <p className="md:text-lg font-light max-w-3xl">{description}</p>
           <Link href={link}>
             <Button variant="secondary-outline">{buttonText}</Button>
           </Link>
         </div>
-        {heroIMG && <Image src={heroIMG} alt="merch" className="max-w-xl" />}
+        {heroIMG && <Image src={heroIMG} alt="merch" className="md:max-w-xl max-w-xs" />}
       </div>
     </div>
   </SplideSlide>
