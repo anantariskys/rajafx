@@ -2,8 +2,8 @@
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { animateScroll as scroll } from "react-scroll";
 import Button from "@/components/Button";
-
 import HeroIMG1 from "@/assets/valetax-hero-1.jpg";
 import HeroIMG2 from "@/assets/valetax-hero-2.jpg";
 import Merch from "@/assets/valetax-merch.png";
@@ -38,8 +38,11 @@ const slides = [
 const splideOptions = {
   type: "fade",
   height: "100vh",
+  rewind : true,
   pagination: false,
   arrows: true,
+  speed: 1000,
+  easing: "ease-in-out",
 };
 
 interface HeroSlideProps {
@@ -49,8 +52,20 @@ interface HeroSlideProps {
   highlight: string;
   description: string;
   buttonText: string;
-  link: string;
+  link?: string;
 }
+
+ const handleScroll = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    const target = document.getElementById("valetax-layanan");
+    if (target) {
+      scroll.scrollTo(target.offsetTop-50, {
+        duration: 1500,
+        smooth: "easeInOutQuart",
+
+      });
+    }
+  };
 const HeroSlide: FC<HeroSlideProps> = ({
   image,
   title,
@@ -72,15 +87,26 @@ const HeroSlide: FC<HeroSlideProps> = ({
             {title} <span className="text-[#25C660]">{highlight}</span>
           </h1>
           <p className="md:text-lg font-light max-w-3xl">{description}</p>
+          {
+            link?(
           <Link href={link}>
             <Button variant="secondary-outline">{buttonText}</Button>
           </Link>
+
+            ):(
+
+           <Button onClick={handleScroll}  variant="secondary-outline">{buttonText}</Button>
+            )
+          }
         </div>
         {heroIMG && <Image src={heroIMG} alt="merch" className="md:max-w-xl max-w-xs" />}
       </div>
     </div>
   </SplideSlide>
 );
+
+
+
 
 const Hero = () => {
   return (
