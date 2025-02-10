@@ -73,7 +73,7 @@ const JenisAkunCard: FC<Props> = ({
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden rounded-lg text-sm"
                 >
-                  <div className="min-h-96 space-y-4 ">
+                  <div className="min-h-[25.5rem] space-y-4 ">
                   
                   {additionalInfo.market && (
                     <InfoRow
@@ -138,7 +138,7 @@ const JenisAkunCard: FC<Props> = ({
                   )}
             <InfoRow
               title="Deposit Minimum"
-              value={"5$"}
+              value={item.minimum_deposit}
             />
             
 
