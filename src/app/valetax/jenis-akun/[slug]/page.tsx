@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const Page = async ({ params }: Props) => {
-  const { slug } = await params;
+  // const { slug } = await params;
   return <DetailAkun />;
 };
 
