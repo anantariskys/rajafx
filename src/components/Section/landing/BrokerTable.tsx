@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import XM from "@/assets/xm2.png";
 import Valetax from "@/assets/valetax.png";
+import Link from 'next/link';
 const BrokerTable = () => {
   return (
     <section className="container md:text-base text-xs font-semibold flex md:flex-row flex-col justify-center md:gap-8 md:py-16">
@@ -51,7 +52,9 @@ const BrokerTable = () => {
         JPY, GBP, EUR, USD</p>
       </div>
       <div className="px-6 py-4 border-t font-normal ">
+        <Link href={"/xm/jenis-akun"}>
         <Button width="w-full">Buka Akun Sekarang</Button>
+        </Link>
       </div>
     </div>
     <div className="w-full border rounded-lg flex flex-col justify-between">
@@ -75,7 +78,9 @@ const BrokerTable = () => {
         <p className="text-center">US Cent</p>
       </div>
       <div className="px-6 py-4 border-t font-normal">
+      <Link href={"/valetax/jenis-akun"}>
         <Button width="w-full">Buka Akun Sekarang</Button>
+      </Link>
       </div>
     </div>
     
