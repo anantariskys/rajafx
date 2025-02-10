@@ -1,6 +1,5 @@
 'use client'
 import { jenisAkunValetax2 } from "@/data/jenisAkun";
-import { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
@@ -9,9 +8,7 @@ import SectionLayout from "@/layouts/SectionLayout";
 import InfoAkun from "@/components/Section/valetax/jenis-akun/InfoAkun";
 import DetailAkunCarousel from "@/components/valetax/DetailAkunCarousel";
 
-interface Props {
-  params: Promise<{ slug: string }>;
-}
+
 
 interface AkunDetails {
   "Deposit Minimal": string;
@@ -52,7 +49,7 @@ const Page = ()=> {
       setData(filteredData);
     }
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [slug,router]);
   
   return (
     <>
