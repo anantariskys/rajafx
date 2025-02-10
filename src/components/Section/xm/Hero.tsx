@@ -5,7 +5,7 @@ import HeroImg from "@/assets/xm-hero.png";
 const Hero = () => {
   return (
     <header className="bg-primary">
-        <main className="h-screen container gap-2 relative flex-col flex items-center text-white justify-center">
+        <main className="h-screen container gap-6 relative flex-col flex items-center text-white justify-center">
           <h1 className="text-6xl max-w-7xl text-center font-semibold ">
             Tingkatkan keuntungan investasi dengan broker{" "}
             <span className="text-[#3F8AF2]">terbaik</span> di dunia
