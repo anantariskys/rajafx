@@ -1,12 +1,12 @@
 import { FC, ReactNode } from 'react'
 
-interface Props {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     children : ReactNode,
     variant? : 'primary' | 'secondary'|'secondary-outline'|'primary-outline',
     width? : 'w-full' | 'w-fit',
     className? : string
 }
-const Button:FC<Props> = ({children,variant='primary',width='w-fit',className}) => {
+const Button:FC<Props> = ({children,variant='primary',width='w-fit',className,onClick}) => {
     let buttonVariant = '';
     switch (variant) {
         case 'primary':
@@ -29,7 +29,7 @@ const Button:FC<Props> = ({children,variant='primary',width='w-fit',className}) 
             break;
     }
   return (
-    <button className={`${width} ${className} ${buttonVariant}  px-8 py-2.5 rounded-lg active:scale-95 transition-all`}>
+    <button onClick={onClick} className={`${width} ${className} ${buttonVariant}  px-8 py-2.5 rounded-lg active:scale-95 transition-all`}>
         {children}
     </button>
   )
