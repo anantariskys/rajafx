@@ -54,7 +54,7 @@ export const jenisAkunXM = [
     max_leverage: "1000:1",
     stop_out_level: "20%",
     swap_free: true,
-    commission: true,
+    commission: false,
     spreads: {
       emas: 2.7,
       usdjpy: 2,
@@ -68,27 +68,19 @@ export const jenisAkunXM = [
       "Cocok untuk anda yang ingin berinvestasi saham dan manfaatkan beragam peluang di pasar saham.",
     minimum_deposit: "$10,000",
     market: [
-      "Forex",
-      "Logam Mulia",
-      "Indeks Saham",
-      "Mata Uang Kripto",
-      "Indeks Tematik",
       "Saham",
-      "Saham Turbo",
-      "Komoditas",
-      "Energi",
     ],
     bonus_eligibility: false,
     micro_account_option: false,
     max_leverage: "1:1",
-    stop_out_level: "50%",
+    stop_out_level: "0%",
     swap_free: true,
     commission: true,
-    spreads: {
-      emas: 2.7,
-      usdjpy: 2,
-      eurusd: 1.6,
-    },
+    // spreads: {
+    //   emas: 2.7,
+    //   usdjpy: 2,
+    //   eurusd: 1.6,
+    // },
   },
 ];
 
