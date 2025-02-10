@@ -1,15 +1,15 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation"; // Untuk handle jika slug tidak ditemukan
 import { jenisAkunValetax2 } from "@/data/jenisAkun";
+import { Metadata } from "next";
 
 import DetailAkun from "./DetailAkun";
 
-interface PageProps {
+interface Props {
   params: { slug: string };
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const akun = jenisAkunValetax2.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const akun = jenisAkunValetax2.find((item) => item.slug === slug);
 
   return {
     title: akun
@@ -19,11 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-const Page = ({ params }: PageProps) => {
-  const akun = jenisAkunValetax2.find((item) => item.slug === params.slug);
-
-  if (!akun) return notFound();
-
+const Page = () => {
   return <DetailAkun />;
 };
 
