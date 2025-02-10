@@ -46,7 +46,10 @@ const DetailAkun = () => {
         }
         setData(filteredData);
       }
+      window.scrollTo(0, 0);
     }, [slug]);
+    
+
   return (
     <>
     <section className="min-h-screen flex items-center">
