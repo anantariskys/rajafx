@@ -4,10 +4,11 @@ import { Metadata } from "next";
 import DetailAkun from "./DetailAkun";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+
   const { slug } = await params;
   const akun = jenisAkunValetax2.find((item) => item.slug === slug);
 
@@ -19,7 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const Page = () => {
+const Page = async ({ params }: Props) => {
+  const { slug } = await params;
   return <DetailAkun />;
 };
 
