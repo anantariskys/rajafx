@@ -5,11 +5,11 @@ import React from 'react'
 
 const Layanan = () => {
   return (
-   <SectionLayout title={<>Layanan <span className='text-[#25C660]'>Valetax</span></>}>
+   <SectionLayout id='valetax-layanan' title={<>Layanan <span className='text-[#25C660]'>Valetax</span></>}>
     <main className='grid md:grid-cols-2 max-w-5xl mx-auto gap-4'>
         {
             layananValetax.map((item, index) => (
-               <LayananCard key={index} item={item}/>
+               <LayananCard link={index === 0 ? '/valetax/jenis-akun' : ''} key={index} item={item}/>
             ))
         }
 
