@@ -4,6 +4,7 @@ import React from "react";
 import "@splidejs/react-splide/css";
 import { jenisAkunValetax2 } from "@/data/jenisAkun";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 
 const DetailAkunCarousel = () => {
   return (
@@ -12,7 +13,9 @@ const DetailAkunCarousel = () => {
         perPage: 4, // Default untuk desktop
         pagination: false,
         arrows: true,
-        gap: "1rem",
+        perMove: 1,
+        rewind:true,
+        gap: "1.5rem",
         breakpoints: {
           1024: { perPage: 3 }, // Tablet besar
           768: { perPage: 2 }, // Tablet kecil
@@ -22,6 +25,7 @@ const DetailAkunCarousel = () => {
     >
       {jenisAkunValetax2.map((item, index) => (
         <SplideSlide key={index}>
+          <Link href={`/valetax/jenis-akun/${item.slug}`} scroll={true}>
           <div className="w-full group hover:bg-primary gap-6 duration-300 ease-in-out hover:text-white text-primary p-6 shadow border rounded-2xl">
             <div className="space-y-4">
               <div className="p-4 rounded-2xl mx-auto w-fit text-2xl bg-[#E6F7E8] duration-200 ease-in-out group-hover:bg-[#3E4249] text-[#25C660]">
@@ -70,6 +74,7 @@ const DetailAkunCarousel = () => {
               </div>
             </div>
           </div>
+      </Link>
         </SplideSlide>
       ))}
     </Splide>
