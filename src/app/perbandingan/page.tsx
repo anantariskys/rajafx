@@ -5,6 +5,7 @@ import React from "react";
 import XM from "@/assets/xm.png";
 import Valetax from "@/assets/valetax.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 const Perbandingan = () => {
   return (
     <div className="md:pt-48 pt-24">
@@ -86,7 +87,9 @@ const Perbandingan = () => {
               </p>
             </div>
             <div className="px-6 py-4 border-t font-normal ">
+              <Link href={'https://clicks.pipaffiliates.com/c?c=50430&l=id&p=1'}>
               <Button width="w-full">Buka Akun Sekarang</Button>
+              </Link>
             </div>
           </div>
           <div className="max-w-md w-full border rounded-lg flex flex-col justify-between">
@@ -128,7 +131,9 @@ const Perbandingan = () => {
               </p>
             </div>
             <div className="px-6 py-4 border-t font-normal">
+              <Link href={'https://ma.valetax.com/user/accounts/new-account'}>
               <Button width="w-full">Buka Akun Sekarang</Button>
+              </Link>
             </div>
           </div>
         </main>
