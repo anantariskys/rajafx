@@ -13,7 +13,7 @@ const JenisAkun = () => {
       >
         <main className="flex md:flex-row flex-col max-w-5xl mx-auto gap-4 justify-center">
           {jenisAkunXM.map((item, index) => (
-            <JenisAkunCard link="#" linkText="Buka akun" item={item} key={index} additionalInfo={item} />
+            <JenisAkunCard link="https://clicks.pipaffiliates.com/c?c=50430&l=id&p=1" linkText="Buka akun" item={item} key={index} additionalInfo={item} />
           ))}
         </main>
       </SectionLayout>
