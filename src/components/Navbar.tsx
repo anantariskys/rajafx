@@ -15,9 +15,11 @@ const Navbar = () => {
   const menuItems = useMemo(
     () => [
       { name: "Home", path: "/", activePath: ["/"] },
-      { name: "Valetax", path: "/valetax", activePath: ["/valetax", "/valetax/promosi", "/valetax/copy-trading"] },
+      { name: "Valetax", path: "/valetax", activePath: ["/valetax", "/valetax/jenis-akun", "/valetax/copy-trading"] },
       { name: "XM", path: "/xm", activePath: ["/xm", "/xm/copy-trading", "/xm/jenis-akun"] },
       { name: "Perbandingan", path: "/perbandingan", activePath: ["/perbandingan"] },
+      { name: "Rebate", path: "/rebate", activePath: ["/rebate"] },
+      { name: "Promosi", path: "/promosi", activePath: ["/promosi"] },
       { name: "Hubungi Kami", path: "/hubungi-kami", activePath: ["/hubungi-kami"] },
     ],
     []
