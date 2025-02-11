@@ -31,7 +31,7 @@ const slides = [
       "Cukup dengan deposit $150 USD dan klaim merchandise eksklusif Anda sekarang juga",
     buttonText: "Klaim Sekarang",
     heroIMG: Merch,
-    link: "/valetax/promosi",
+    link: "/promosi",
   },
 ];
 
