@@ -15,7 +15,7 @@ const CopyTrading = () => {
         subTitle="Percayakan investasi anda pada ahlinya dan nikmati kemudahan copy trading untuk hasil yang optimal."
         variant="Valetax"
       >
-        <main className="flex pt-20 items-center justify-between">
+        <main className="flex md:flex-row flex-col-reverse gap-4 md:px-0 px-4 pt-20 items-center justify-between">
           <div className="flex flex-col gap-4 max-w-2xl">
             <h3 className="text-5xl font-semibold ">
               Apa itu Copy <span className="text-[#25C660]">Trading</span>?
@@ -34,11 +34,11 @@ const CopyTrading = () => {
             </div>
             <Button>Mulai Copy Trading</Button>
           </div>
-          <Image alt="img" src={AccountIMG} className="max-w-xl border-2  rounded-2xl" draggable={false}/>
+          <Image alt="img" src={AccountIMG} className="md:max-w-xl max-w-sm border-2  rounded-2xl" draggable={false}/>
         </main>
       </SectionLayout>
       <SectionLayout title={<>Bagaimana cara memulai <span className="text-[#25C660]">CopyTrading</span>?</>}>
-      <main className="max-w-6xl mx-auto grid pt-10 grid-cols-3 gap-6">
+      <main className="max-w-6xl mx-auto grid pt-10 md:grid-cols-3 gap-6">
         {
             how.map((item, index) => (
                 <div key={index} className="w-full space-y-2">
@@ -51,7 +51,7 @@ const CopyTrading = () => {
       </main>
       </SectionLayout>
       <SectionLayout backgroundColor="bg-[#141921]" title={<><span className="text-[#25C660]">Manfaat </span>yang anda dapatkan</>}>
-        <main className="max-w-7xl mx-auto pt-10 flex gap-4 flex-wrap justify-center">
+        <main className="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row gap-4 flex-wrap justify-center">
             {
                 valetaxCopyTradingBenefits.map((item, index) => (
                     <div key={index} className=" max-w-sm w-full flex flex-col  items-center gap-4">
