@@ -20,30 +20,30 @@ const Footer = () => {
               <h3 className="text-xl font-semibold mb-4">Layanan</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/">Copy Trading</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/">Promosi</Link>
+                  <Link href="/perbandingan">Perbandingan</Link>
                 </li>
                 <li>
-                  <Link href="/">Hubungi Kami</Link>
+                  <Link href="/rebate">Klaim Rebate</Link>
+                </li>
+                <li>
+                  <Link href="/promosi">Klaim Merchandise</Link>
+                </li>
+                <li>
+                  <Link href="/hubungi-kami">Hubungi Kami</Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Trading</h3>
+              <h3 className="text-xl font-semibold mb-4">Broker</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/">Buka Akun</Link>
+                  <Link href="/xm">XM</Link>
                 </li>
                 <li>
-                  <Link href="/">Deposit</Link>
-                </li>
-                <li>
-                  <Link href="/">Rebate</Link>
-                </li>
-                <li>
-                  <Link href="/">Withdrawal</Link>
+                  <Link href="/valetax">Valetax</Link>
                 </li>
               </ul>
             </div>
@@ -54,14 +54,12 @@ const Footer = () => {
                   <Link href="/">Whatsapp</Link>
                 </li>
                 <li>
-                  <Link href="/">Instagram</Link>
+                  <Link href="/">Gmail</Link>
                 </li>
                 <li>
-                  <Link href="/">Twitter</Link>
+                  <Link href="/">Telepon</Link>
                 </li>
-                <li>
-                  <Link href="/">Facebook</Link>
-                </li>
+       
               </ul>
             </div>
           </div>
