@@ -12,7 +12,7 @@ const brokers = [
     spread: '0.8',
     maxLeverage: '1:1000',
     accountTypes: '3 tipe',
-    link: '#',
+    link: '/xm',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const brokers = [
     spread: '0.0',
     maxLeverage: '1:2000',
     accountTypes: '6 tipe',
-    link: '#',
+    link: '/valetax',
   },
 ];
 
