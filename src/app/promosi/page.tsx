@@ -48,6 +48,7 @@ const Promosi = () => {
                   href={
                     "https://ma.valetax.com/partner/IB4492317"
                   }
+                  target="_blank"
                 >
                   <Button variant="primary-outline">Deposit Sekarang</Button>
                 </Link>
