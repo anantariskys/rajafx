@@ -7,6 +7,7 @@ import Button from "@/components/Button";
 import SectionLayout from "@/layouts/SectionLayout";
 import InfoAkun from "@/components/Section/valetax/jenis-akun/InfoAkun";
 import DetailAkunCarousel from "@/components/valetax/DetailAkunCarousel";
+import Link from "next/link";
 
 
 
@@ -63,10 +64,12 @@ const Page = ()=> {
           draggable={false}
         />
       )}
-      <div className="max-w-2xl space-y-4">
+      <div className="max-w-2xl flex flex-col gap-4">
         <h1 className="text-5xl font-semibold">Akun {data?.name2}</h1>
         <p className="text-[#6B6E73] text-lg">{data?.description3}</p>
+        <Link href={'https://ma.valetax.com/partner/IB4492317'} target={'_blank'}>
         <Button>Buat Akun</Button>
+        </Link>
       </div>
     </main>
   </section>
