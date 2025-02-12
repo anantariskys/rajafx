@@ -62,7 +62,9 @@ const CTA = () => {
             </p>
             </div>
           )}
-          <Link href={pathname === "/rebate" ? "https://ma.valetax.com/partner/IB4492317" : "/valetax/jenis-akun"}>
+          <Link href={
+            '/hubungi-kami'
+          }>
             <Button variant="secondary">Hubungi Kami</Button>
           </Link>
         </div>
