@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 import InfoRow from "./InfoRow";
 import Button from "../Button";
+import Link from "next/link";
 
 interface Broker {
   image: StaticImageData;
@@ -11,6 +12,7 @@ interface Broker {
   spread: string;
   maxLeverage: string;
   accountTypes: string;
+  link: string;
 }
 
 interface BrokerCardProps {
@@ -30,7 +32,7 @@ const BrokerCard: FC<BrokerCardProps> = ({ broker }) => {
         <h4 className="text-2xl font-semibold mt-2">{broker.name}</h4>
         <p className="text-[#6B6E73] mt-2">{broker.description}</p>
       </div>
-      <div className="space-y-4 mt-4">
+      <div className="flex flex-col gap-4 mt-4">
         <InfoRow
           icon="solar:dollar-linear"
           label="Min Deposit"
@@ -51,7 +53,9 @@ const BrokerCard: FC<BrokerCardProps> = ({ broker }) => {
           label="Jenis Tipe"
           value={broker.accountTypes}
         />
+        <Link href={broker.link}>
         <Button width="w-full">Lihat lebih lengkap</Button>
+        </Link>
       </div>
     </div>
   );
