@@ -87,7 +87,7 @@ const Perbandingan = () => {
               </p>
             </div>
             <div className="px-6 py-4 border-t font-normal ">
-              <Link href={'https://clicks.pipaffiliates.com/c?c=50430&l=id&p=1'}>
+              <Link target="_blank" href={'https://clicks.pipaffiliates.com/c?c=50430&l=id&p=1'}>
               <Button width="w-full">Buka Akun Sekarang</Button>
               </Link>
             </div>
