@@ -56,9 +56,9 @@ export const jenisAkunXM = [
     swap_free: true,
     commission: false,
     spreads: {
-      emas: 2.7,
-      usdjpy: 2,
-      eurusd: 1.6,
+      emas: 1.6,
+      usdjpy: 0.9,
+      eurusd: 0.8,
     },
   },
   {
@@ -88,6 +88,7 @@ export const jenisAkunValetax = [
   {
     icon: "majesticons:cent-circle",
     name: "CENT",
+    slug:'cent',
     description:
       "Cocok untuk anda trader pemula dan algoritmik, memberikan kesempatan untuk mengalami strategi trading dengan risiko rendah.",
     minimum_deposit: "$1",
@@ -95,6 +96,7 @@ export const jenisAkunValetax = [
   {
     icon: "fa6-solid:money-bill",
     name: "Standard",
+    slug:'standard',
     description:
       "Cocok untuk trader yang mencari leverage hingga 1:2000, menawarkan kondisi trading yang mirip dengan pasar antar bank dan institusi.",
     minimum_deposit: "$1",
@@ -103,6 +105,7 @@ export const jenisAkunValetax = [
     icon: "teenyicons:star-circle-solid",
 
     name: "ECN",
+    slug:"ecn",
     description:
       "Cocok untuk trader ahli dan scalper, dengan spread nol dan akses langsung dari penyedia likuiditas serta.",
     minimum_deposit: "$50",
@@ -110,6 +113,7 @@ export const jenisAkunValetax = [
   {
     icon: "fa6-solid:money-bill",
     name: "Booster",
+    slug: "booster",
     description:
       "Akun Booster menawarkan keuntungan ganda dari trading pribadi dan referral, cocok untuk anda yang ingin meningkatkan pengalaman dan memperluas jaringan.",
     minimum_deposit: "$1",
@@ -117,6 +121,7 @@ export const jenisAkunValetax = [
   {
     icon: "mingcute:gift-fill",
     name: "Bonus",
+    slug: "bonus",
     description:
       "Dapatkan keuntungan maksimal dengan bonus, yang memberikan fleksibilitas penuh dalam mengelola modal dan berbagai strategi trading.",
     minimum_deposit: "$1",
@@ -124,6 +129,7 @@ export const jenisAkunValetax = [
   {
     icon: "fluent:crown-24-filled",
     name: "PRO",
+    slug: "pro",
     description:
       "Akun Pro dirancang khusus untuk trader berpengalaman yang memerlukan kondisi trading terbaik dengan spread ultra-rendah, eksekusi tinggi, dan tanpa komisi.",
     minimum_deposit: "$500",
@@ -240,7 +246,7 @@ export const jenisAkunValetax2 = [
     heroIMG: IMG5,
 
     name: "Bonus Account",
-    name2: "Account",
+    name2: "Bonus",
     slug: "bonus",
     description: "Tingkatkan ekuitas dengan bonus yang tersedia",
     description2:
