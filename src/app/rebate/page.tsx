@@ -36,8 +36,7 @@ const Page = () => {
       <SectionLayout
         title={
           <>
-            Keunggulan rebate dengan
-            <span className="text-[#25C660]">RajaFX</span>
+            Keunggulan rebate dengan <span className="text-[#25C660]">RajaFX</span>
           </>
         }
       >
@@ -46,7 +45,7 @@ const Page = () => {
             {rebate.map((item, index) => (
               <div
                 key={index}
-                className=" md:max-w-72 w-full flex flex-col text-center  items-center "
+                className=" md:max-w-72 w-full gap-3 flex flex-col text-center  items-center "
               >
                 <div className="bg-[#3E4249] p-4 rounded-full text-2xl">
                   <Icon icon={item.icon} className=" text-[#25C660]" />
