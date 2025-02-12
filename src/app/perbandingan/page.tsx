@@ -131,7 +131,7 @@ const Perbandingan = () => {
               </p>
             </div>
             <div className="px-6 py-4 border-t font-normal">
-              <Link href={'https://ma.valetax.com/partner/IB4492317'}>
+              <Link target="_blank" href={'https://ma.valetax.com/partner/IB4492317'}>
               <Button width="w-full">Buka Akun Sekarang</Button>
               </Link>
             </div>
