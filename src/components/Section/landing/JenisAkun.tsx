@@ -21,9 +21,7 @@ const JenisAkun = () => {
         <div className="w-full container gap-4 md:flex-row flex-col  py-8 flex justify-between items-center">
           <div className="space-y-2">
             <Image src={XM} width={200} alt="xm" />
-            <Link href={'/xm'}>
-            <Button width="w-full">Pelajari lebih lanjut</Button>
-            </Link>
+        
           </div>
           <div className="max-w-4xl w-full md:flex-row flex-col  flex gap-4">
             {jenisAkunXM.map((item, index) => (
@@ -45,11 +43,13 @@ const JenisAkun = () => {
                     {item.description}
                   </p>
                 </div>
-                <div className="font-semibold space-y-2">
+                <div className="font-semibold flex flex-col gap-2">
                   <p className=" text-center">
                     Minimum Deposit {item.minimum_deposit}
                   </p>
+                <Link href={'/xm/jenis-akun'}>
                   <Button width="w-full">Lihat lebih lengkap</Button>
+                </Link>
                 </div>
               </div>
             ))}
@@ -60,9 +60,7 @@ const JenisAkun = () => {
         <div className="w-full container gap-4   py-8 flex md:flex-row flex-col justify-between items-center">
           <div className="space-y-2">
             <Image src={Valetax} width={200} alt="valetax" />
-            <Link href={'/valetax'}>
-            <Button width="w-full">Pelajari lebih lanjut</Button>
-            </Link>
+        
           </div>
           <div className="max-w-4xl w-full  flex gap-4">
             <Splide
@@ -97,7 +95,9 @@ const JenisAkun = () => {
                       <p className=" text-center">
                         Minimum Deposit {item.minimum_deposit}
                       </p>
+                      <Link href={`/valetax/jenis-akun/${item.slug}`}>
                       <Button width="w-full">Lihat lebih lengkap</Button>
+                      </Link>
                     </div>
                   </div>
                 </SplideSlide>
