@@ -24,7 +24,7 @@ const JenisAkun = () => {
                           <p className="text-[#6B6E73] group-hover:text-[#E8E8E9] duration-200 ease-in-out text-center">{item.description2}</p>
                         </div>
                         <div className="py-4  flex flex-col gap-2">
-                          <Link href={'https://ma.valetax.com/partner/IB4492317'}>
+                          <Link target='_blank' href={'https://ma.valetax.com/partner/IB4492317'}>
                             <Button width='w-full' className='group-hover:bg-white group-hover:text-primary'>Buat Akun</Button>
                           </Link>
                             <Link href={`/valetax/jenis-akun/${item.slug}`}>
