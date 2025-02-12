@@ -24,7 +24,7 @@ const JenisAkunCard: FC<JenisAkunCardProps> = ({ item }) => {
       </div>
       <div className="py-4 flex flex-col gap-4">
         <p className=" text-center">Spread: {item.spread}</p>
-        <Link href={'/valetax/jenis-akun'} className="relative cursor-pointer justify-center gap-1 z-20 text-[#25C660] font-medium flex items-center">
+        <Link target="_blank" href={'/valetax/jenis-akun'} className="relative cursor-pointer justify-center gap-1 z-20 text-[#25C660] font-medium flex items-center">
           <p>Pilih Akun</p>
           <Icon icon="material-symbols:arrow-right-alt-rounded" />
         </Link>
