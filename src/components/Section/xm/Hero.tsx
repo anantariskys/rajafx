@@ -2,6 +2,7 @@ import Button from '@/components/Button'
 import Image from 'next/image'
 import React from 'react'
 import HeroImg from "@/assets/xm-hero.png";
+import Link from 'next/link';
 const Hero = () => {
   return (
     <header className="bg-primary">
@@ -14,9 +15,11 @@ const Hero = () => {
             Kami menawarkan pilihan broker trading terbaik untuk membantu para
             trader mencapai kesuksesan
           </p>
+          <Link href={'/xm/jenis-akun'}>
           <Button variant="secondary" width="w-fit">
             Mulai Trading
           </Button>
+          </Link>
         </main>
         <div className=" h-[30vh] flex justify-center relative">
           <Image
