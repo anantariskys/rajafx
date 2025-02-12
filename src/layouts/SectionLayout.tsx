@@ -33,7 +33,7 @@ const SectionLayout: FC<SectionLayoutProps> = ({
       className = "text-[#25C660] bg-[#E9F9EF]";
   }
   return (
-    <section id={`${id}`} className={`${backgroundColor}  ${backgroundColor==="bg-[#141921]"?"text-white":""}`}>
+    <section id={`${id}`} className={`${backgroundColor} mb-20  ${backgroundColor==="bg-[#141921]"?"text-white":""}`}>
       <div className={`${autoContainer && "container"} py-10  md::py-24 space-y-6`}>
         <div className="space-y-4">
           {icon && (
