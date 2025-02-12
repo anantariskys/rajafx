@@ -9,7 +9,7 @@ const Layanan = () => {
     <main className='grid md:grid-cols-2 max-w-5xl mx-auto gap-4'>
         {
             layananValetax.map((item, index) => (
-               <LayananCard link={index === 0 ? '/valetax/jenis-akun' : index===1?'/rebate':""} key={index} item={item}/>
+               <LayananCard link={index === 0 ? '/valetax/jenis-akun' : index===1?'/rebate':"https://ma.valetax.com/partner/IB4492317"} key={index} item={item}/>
             ))
         }
 
