@@ -13,13 +13,14 @@ const JenisAkun = () => {
           Jenis Akun <span className="text-[#3F8AF2] ">XM</span>
         </>
       }
+      
     >
       <main className="flex md:flex-row flex-col max-w-5xl mx-auto gap-4 justify-center">
         {jenisAkunXM.map((item, index) => (
           <JenisAkunCard  item={item} key={index} />
         ))}
       </main>
-      <div className="flex justify-center container">
+      <div className="flex justify-center container mb-20">
         <Link href={"/xm/jenis-akun"}>
           <Button>Selengkapnya</Button>
         </Link>
