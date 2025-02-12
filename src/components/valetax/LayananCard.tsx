@@ -13,7 +13,7 @@ interface LayananCardProps {
 }
 const LayananCard:FC<LayananCardProps> = ({item,link}) => {
   return (
-    <Link href={link}>
+    <Link target={link==="https://ma.valetax.com/partner/IB4492317"?"_blank":"_self"} href={link}>
     <div className="w-full hover:shadow-lg duration-300 ease-in-out p-6 border rounded-3xl">
         <Image alt={item.title} className="w-32" src={item.image}/>
       <h3 className="text-2xl font-semibold">{item.title}</h3>
