@@ -113,6 +113,10 @@ const JenisAkunCard: FC<Props> = ({
                       title="Komisi"
                       value={<StatusIcon status={additionalInfo.commission} />}
                     />
+                      <InfoRow
+              title="Deposit Minimum"
+              value={item.minimum_deposit}
+            />
                   </div>
 
                   {additionalInfo.spreads && (
@@ -136,10 +140,7 @@ const JenisAkunCard: FC<Props> = ({
                       </div>
                     </div>
                   )}
-            <InfoRow
-              title="Deposit Minimum"
-              value={item.minimum_deposit}
-            />
+          
             
 
             </div>
