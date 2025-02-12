@@ -57,7 +57,7 @@ const JenisAkunCard: FC<Props> = ({
       <div className="font-semibold flex-col flex gap-4">
         <p className="text-center">Minimum Deposit {item.minimum_deposit}</p>
         {link && (
-          <Link href={link}>
+          <Link target="_blank" href={link}>
             <Button width="w-full">{linkText}</Button>
           </Link>
         )}
