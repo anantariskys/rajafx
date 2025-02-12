@@ -39,7 +39,7 @@ const CTA = () => {
                 Hubungi Customer Service dan Klaim Rebate Anda.
               </p>
               <p className="md:text-base text-xs">
-                Hubungi tim Customer Service kami untuk proses klaim rebate Anda. Dapatkan bantuan cepat dan pastikan Anda mendapatkan keuntungan maksimal dari setiap transaksi trading.
+              Hubungi Customer Service kami untuk klaim rebate dengan memberikan nomor akun Anda. Dapatkan bantuan cepat dan maksimalkan keuntungan dari setiap transaksi trading.
               </p>
             </>
           ) : pathname === "/xm/jenis-akun" || pathname.startsWith("/valetax/jenis-akun/") ? (
@@ -52,12 +52,17 @@ const CTA = () => {
               </p>
             </>
           ) : (
-            <p className="md:text-5xl text-xl font-semibold text-center md:max-w-4xl">
-              Bingung memulai trading? Konsultasikan dengan tim {" "}
+            <div className="space-y-4">
+            <p className="md:text-5xl text-xl font-semibold  text-center md:max-w-4xl">
+              Bingung memulai trading? 
+            </p>
+            <p className="md:text-5xl text-xl font-semibold  text-center md:max-w-4xl">
+             Konsultasikan dengan tim {" "}
               <span className="text-[#25C660]">RajaFx</span>
             </p>
+            </div>
           )}
-          <Link href={"/hubungi-kami"}>
+          <Link href={pathname === "/rebate" ? "https://ma.valetax.com/partner/IB4492317" : "/valetax/jenis-akun"}>
             <Button variant="secondary">Hubungi Kami</Button>
           </Link>
         </div>
