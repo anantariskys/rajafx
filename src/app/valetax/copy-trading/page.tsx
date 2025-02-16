@@ -6,6 +6,7 @@ import AccountIMG from '@/assets/valetax-account-example.png'
 import how from "@/data/how";
 import { valetaxCopyTradingBenefits } from "@/data/benefits";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 const CopyTrading = () => {
   return (
     <div className="md:pt-48 pt-24">
@@ -32,7 +33,9 @@ const CopyTrading = () => {
                 secara otomatis diterapkan ke akun pengguna
               </p>
             </div>
+            <Link href={'https://ma.valetax.com/partner/IB4492317'} target="_blank">
             <Button>Mulai Copy Trading</Button>
+            </Link>
           </div>
           <Image alt="img" src={AccountIMG} className="md:max-w-xl max-w-sm border-2  rounded-2xl" draggable={false}/>
         </main>
