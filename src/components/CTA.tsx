@@ -63,9 +63,10 @@ const CTA = () => {
             </div>
           )}
           <Link href={
+            pathname === "/rebate" ? `https://mail.google.com/mail/u/0/?fs=1&to=rajafxcs@gmail.com&su=${encodeURIComponent('Klaim Merchandise')}&tf=cm` : pathname === "/xm/jenis-akun" || pathname.startsWith("/valetax/jenis-akun/") ? 'https://ma.valetax.com/partner/IB4492317' :
             '/hubungi-kami'
           }>
-            <Button variant="secondary">Hubungi Kami</Button>
+            <Button variant="secondary">{pathname === "/rebate" ? 'Klaim Rebate' : pathname === "/xm/jenis-akun" || pathname.startsWith("/valetax/jenis-akun/") ? 'Mulai' : 'Hubungi Kami'}</Button>
           </Link>
         </div>
       </main>
