@@ -20,7 +20,7 @@ const slides = [
     description:
       "Maksimalkan potensi keuntungan Anda dengan menikmati proses investasi yang mudah dan tanpa hambatan dengan Valetax.",
     buttonText: "Jelajahi",
-    link: "",
+    link: "https://ma.valetax.com/partner/IB4492317",
   },
   {
     id: 2,
@@ -89,7 +89,7 @@ const HeroSlide: FC<HeroSlideProps> = ({
           <p className="md:text-lg font-light max-w-3xl">{description}</p>
           {
             link?(
-          <Link href={link}>
+          <Link target="_blank" href={link}>
             <Button variant="secondary-outline">{buttonText}</Button>
           </Link>
 
