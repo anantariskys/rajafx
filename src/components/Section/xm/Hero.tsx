@@ -15,7 +15,7 @@ const Hero = () => {
             Kami menawarkan pilihan broker trading terbaik untuk membantu para
             trader mencapai kesuksesan
           </p>
-          <Link href={'/xm/jenis-akun'}>
+          <Link target='_blank' href={'https://clicks.pipaffiliates.com/c?c=50430&l=id&p=1'}>
           <Button variant="secondary" width="w-fit">
             Mulai Trading
           </Button>
