@@ -46,7 +46,7 @@ const Promosi = () => {
                 </a>
                 <Link
                   href={
-                    "https://ma.valetax.com/partner/IB4492317"
+                    "https://ma.valetax.com/partner/IB6406734"
                   }
                   target="_blank"
                 >

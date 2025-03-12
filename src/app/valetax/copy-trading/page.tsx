@@ -33,7 +33,7 @@ const CopyTrading = () => {
                 secara otomatis diterapkan ke akun pengguna
               </p>
             </div>
-            <Link href={'https://ma.valetax.com/partner/IB4492317'} target="_blank">
+            <Link href={'https://ma.valetax.com/partner/IB6406734'} target="_blank">
             <Button>Mulai Copy Trading</Button>
             </Link>
           </div>

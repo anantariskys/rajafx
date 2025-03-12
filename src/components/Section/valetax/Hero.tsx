@@ -20,7 +20,7 @@ const slides = [
     description:
       "Maksimalkan potensi keuntungan Anda dengan menikmati proses investasi yang mudah dan tanpa hambatan dengan Valetax.",
     buttonText: "Jelajahi",
-    link: "https://ma.valetax.com/partner/IB4492317",
+    link: "https://ma.valetax.com/partner/IB6406734",
   },
   {
     id: 2,

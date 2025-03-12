@@ -67,7 +67,7 @@ const Page = ()=> {
       <div className="max-w-2xl flex flex-col gap-4">
         <h1 className="text-5xl font-semibold">Akun {data?.name2}</h1>
         <p className="text-[#6B6E73] text-lg">{data?.description3}</p>
-        <Link href={'https://ma.valetax.com/partner/IB4492317'} target={'_blank'}>
+        <Link href={'https://ma.valetax.com/partner/IB6406734'} target={'_blank'}>
         <Button>Buat Akun</Button>
         </Link>
       </div>
