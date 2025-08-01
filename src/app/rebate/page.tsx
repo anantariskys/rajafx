@@ -40,18 +40,18 @@ const Page = () => {
           </>
         }
       >
-        <main className="flex md:flex-row flex-col py-10 flex-wrap justify-center relative z-10 gap-4 md:gap-8">
+        <main className="grid grid-cols-1 md:grid-cols-3 py-10 relative z-10 gap-4 md:gap-8">
      
             {rebate.map((item, index) => (
               <div
                 key={index}
-                className=" md:max-w-72 w-full gap-3 flex flex-col text-center  items-center "
+                className=" border rounded-2xl p-6 w-full gap-3 flex flex-col text-center  items-start "
               >
-                <div className="bg-[#3E4249] p-4 rounded-full text-2xl">
+                <div className="bg-[#E9F9EF] p-4 rounded-full text-2xl">
                   <Icon icon={item.icon} className=" text-[#25C660]" />
                 </div>
-                <h3 className="text-2xl font-semibold">{item.title}</h3>
-                <p className="text-center text-[#6B6E73]">{item.description}</p>
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <p className="text-start text-[#9A9CA0]">{item.description}</p>
               </div>
             ))}
 
