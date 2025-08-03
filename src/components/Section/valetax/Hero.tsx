@@ -5,8 +5,6 @@ import "@splidejs/react-splide/css";
 import { animateScroll as scroll } from "react-scroll";
 import Button from "@/components/Button";
 import HeroIMG1 from "@/assets/valetax-hero-1.jpg";
-import HeroIMG2 from "@/assets/valetax-hero-2.jpg";
-import Merch from "@/assets/valetax-merch.png";
 import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 import Link from "next/link";
@@ -21,17 +19,6 @@ const slides = [
       "Maksimalkan potensi keuntungan Anda dengan menikmati proses investasi yang mudah dan tanpa hambatan dengan Valetax.",
     buttonText: "Jelajahi",
     link: "https://ma.valetax.com/partner/IB6406734",
-  },
-  {
-    id: 2,
-    image: HeroIMG2,
-    title: "Free",
-    highlight: "Merchandise",
-    description:
-      "Cukup dengan deposit $150 USD dan klaim merchandise eksklusif Anda sekarang juga",
-    buttonText: "Klaim Sekarang",
-    heroIMG: Merch,
-    link: "/promosi",
   },
 ];
 
