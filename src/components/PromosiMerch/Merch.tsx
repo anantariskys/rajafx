@@ -4,6 +4,7 @@ import { useState } from "react";
 import XMIMG from "@/assets/XMPANEL.png";
 import ValetaxIMG from "@/assets/ValetaxPanel.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Merch() {
   const [activeTab, setActiveTab] = useState("xm");
@@ -211,7 +212,7 @@ export default function Merch() {
                 src={ValetaxIMG}
               />
               <div>
-                <div >
+                <div>
                   <div className="space-y-2">
                     <h5 className="text-2xl font-bold">
                       Deposit Minimal $200 USD
@@ -239,9 +240,14 @@ export default function Merch() {
                     >
                       Klaim Merchandise
                     </a>
-                    <button className="px-6 py-2.5 rounded-lg font-medium border-2 border-neutral-700 text-neutral-700 hover:bg-neutral-50 transition-colors">
+                    <Link
+                      href={
+                        "https://clicks.pipaffiliates.com/c?c=50430&l=id&p=1"
+                      }
+                      className="px-6 py-2.5 rounded-lg font-medium border-2 border-neutral-700 text-neutral-700 hover:bg-neutral-50 transition-colors"
+                    >
                       Deposit sekarang
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
