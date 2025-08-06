@@ -16,7 +16,7 @@ const Hubungi = () => {
                 <div className='space-y-2 text-lg font-semibold'>
                     <div className='flex items-center gap-4'>
                         <Icon className='text-3xl' icon={'ic:baseline-whatsapp'}/>
-                        <p>-</p>   
+                        <p>+6283150370460</p>
                     </div>
 
                     <div className='flex items-center gap-4'>
