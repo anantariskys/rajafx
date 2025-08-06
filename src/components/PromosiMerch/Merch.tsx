@@ -1,17 +1,30 @@
 "use client";
 
 import { useState } from "react";
-import XMIMG from "@/assets/XMPANEL.png";
+import XMIMG1 from "@/assets/XMPANEL1.png";
+import XMIMG2 from "@/assets/XMPANEL2.png";
+import XMIMG3 from "@/assets/XMPANEL3.png";
 import ValetaxIMG from "@/assets/ValetaxPanel.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useImagePreview } from "@/providers/ImagePreviewProvider";
 
 export default function Merch() {
   const [activeTab, setActiveTab] = useState("xm");
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
+  const [XMIMG, setXMIMG] = useState(XMIMG1);
+  const {setPreviewSrc} = useImagePreview()
 
   const toggleAccordion = (index: number) => {
     setOpenAccordion(openAccordion === index ? null : index);
+    if (index === 0) {
+      setXMIMG(XMIMG1);
+    } else if (index === 1) {
+      setXMIMG(XMIMG2);
+    } else if (index === 2) {
+      setXMIMG(XMIMG3);
+    }
+
   };
 
   return (
@@ -56,7 +69,8 @@ export default function Merch() {
         <div className="mt-8">
           {activeTab === "xm" && (
             <div className="grid grid-cols-2">
-              <Image draggable={false} alt="XM" className="w-4/5" src={XMIMG} />
+              <Image onClick={() => setPreviewSrc(XMIMG)} draggable={false} alt="XM" className="w-4/5" src={XMIMG} />
+
               <div>
                 <div className="divide-y-2">
                   {/* Accordion Item 1 */}
@@ -210,6 +224,8 @@ export default function Merch() {
                 alt="XM"
                 className="w-4/5"
                 src={ValetaxIMG}
+                onClick={() => setPreviewSrc(ValetaxIMG)}
+
               />
               <div>
                 <div>
