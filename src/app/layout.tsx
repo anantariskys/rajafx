@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import LenisProvider from "@/providers/LenisProvider";
+import { ImagePreviewProvider } from "@/providers/ImagePreviewProvider";
+import ImagePreviewModal from "@/components/PromosiMerch/ImagePreviewModal";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -19,7 +21,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,11 +30,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${plusJakartaSans.className} antialiased bg-white`}>
         <LenisProvider />
-        <Navbar />
+        <ImagePreviewProvider>
+          <Navbar />
 
-        {children}
-        <CTA />
-        <Footer />
+          {children}
+          <CTA />
+          <Footer />
+           <ImagePreviewModal />
+        </ImagePreviewProvider>
       </body>
     </html>
   );

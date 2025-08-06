@@ -27,8 +27,8 @@ const Navbar = () => {
       {
         name: "Promosi",
         submenu: [
-          { name: "Promosi", path: "/promosi", activePath: ["/promosi"] },
-          { name: "Promosi Merch", path: "/promosi-merch", activePath: ["/promosi-merch"] },
+          { name: "Penawaran Bonus", path: "/penawaran-bonus", activePath: ["/penawaran-bonus"] },
+          { name: "Merchandise", path: "/merchandise", activePath: ["/merchandise"] },
         ],
       },
       { name: "Hubungi Kami", path: "/hubungi-kami", activePath: ["/hubungi-kami"] },
